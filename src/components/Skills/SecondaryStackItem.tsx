@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import { SecondaryStackItemProps } from "./types";
 import { CustomLink } from "../CustomLink";
 
@@ -17,7 +17,7 @@ export const SecondaryStackItem: FC<SecondaryStackItemProps> = ({
         {technology}
       </span>
       <CustomLink link={link}>
-        <Image width={width} height={height} src={icon} alt={altText} />
+        <ExportedImage width={width} height={height} src={icon} alt={altText} />
       </CustomLink>
     </div>
   );

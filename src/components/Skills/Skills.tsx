@@ -12,7 +12,7 @@ export const Skills: FC = () => {
     <section
       ref={mySkillsRef}
       id="my-skills"
-      className={`w-screen max-w-none mx-auto px-0 relative left-[calc(-50vw+50%)] bg-accent transition-opacity ease-in duration-500 ${
+      className={`w-screen mb-20 max-w-none mx-auto px-0 relative left-[calc(-50vw+50%)] bg-accent transition-opacity ease-in duration-500 ${
         isMySkillsIntersecting ? "opacity-100" : "opacity-0"
       }`}
     >

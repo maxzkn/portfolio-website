@@ -1,5 +1,5 @@
 import { FC, useEffect, useRef, useState } from "react";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import defaultTheme from "tailwindcss/defaultTheme";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { useIsIntersecting } from "@/hooks/useIsIntersecting";
@@ -24,7 +24,7 @@ export const Header: FC = () => {
   }, []);
 
   return (
-    <header className="w-screen max-w-none mx-auto px-0 left-[calc(-50vw+50%)] flex items-center justify-center h-screen relative bg-fixed bg-center bg-no-repeat bg-cover bg-[url('/images/hero.png')]">
+    <header className="w-screen max-w-none mx-auto px-0 mb-20 left-[calc(-50vw+50%)] flex items-center justify-center h-screen relative bg-fixed bg-center bg-no-repeat bg-cover bg-[url('/images/hero.png')]">
       <div className="absolute inset-0 z-0 bg-gradient-to-r from-sky-700"></div>
       {isMounted && !isMobile && (
         <div className="container mx-auto absolute top-16 text-right">
@@ -37,7 +37,7 @@ export const Header: FC = () => {
           isHeaderIntersecting ? "scale-100 opacity-100" : "scale-90 opacity-0"
         }`}
       >
-        <Image
+        <ExportedImage
           src="/images/me.jpg"
           priority
           alt="my-picture"
@@ -57,13 +57,17 @@ export const Header: FC = () => {
           </p>
           <div className="flex items-center gap-3">
             <CustomLink link="https://www.linkedin.com/in/maksimzykin/">
-              <Image src={linkedinLogo} alt="linkedin-logo" width={25} />
+              <ExportedImage
+                src={linkedinLogo}
+                alt="linkedin-logo"
+                width={25}
+              />
             </CustomLink>
             <CustomLink link="mailto: maks.zyk@gmail.com">
-              <Image src={emailLogo} alt="email-logo" width={37} />
+              <ExportedImage src={emailLogo} alt="email-logo" width={37} />
             </CustomLink>
             <CustomLink link="https://github.com/maxzkn">
-              <Image src={githubLogo} alt="github-logo" width={26} />
+              <ExportedImage src={githubLogo} alt="github-logo" width={26} />
             </CustomLink>
           </div>
         </div>

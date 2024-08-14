@@ -11,7 +11,7 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-5">
+    <main className="container mx-auto px-5 overflow-hidden sm:overflow-visible">
       <Header />
       <AboutMe />
       <Divider />

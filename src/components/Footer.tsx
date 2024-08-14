@@ -8,7 +8,7 @@ export const Footer: FC = () => {
   return (
     <footer
       ref={myFooterRef}
-      className={`py-10 text-center transition-opacity ease-in duration-500 ${
+      className={`pb-10 text-center transition-opacity ease-in duration-500 ${
         isFooterIntersecting ? "opacity-100" : "opacity-0"
       }`}
     >

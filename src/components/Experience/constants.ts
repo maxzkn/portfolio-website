@@ -5,7 +5,7 @@ export const workExperienceItems: ExperienceItemProps[] = [
     {
       icon: workIcon,
       altText: "work-icon",
-      classNames: "pt-12 md:flex-row",
+      classNames: "md:flex-row",
       title: "Software Engineer",
       institution: "Revel Systems",
       dates: "2022 - 2024",
@@ -19,7 +19,7 @@ export const workExperienceItems: ExperienceItemProps[] = [
     {
       icon: workIcon,
       altText: "work-icon",
-      classNames: "pt-20 md:flex-row-reverse",
+      classNames: "md:flex-row-reverse",
       title: "Junior Full-Stack Software Engineer",
       institution: "Revel Systems",
       dates: "2021 - 2022",
@@ -30,7 +30,7 @@ export const workExperienceItems: ExperienceItemProps[] = [
     {
       icon: workIcon,
       altText: "work-icon",
-      classNames: "pt-20 md:flex-row",
+      classNames: "md:flex-row",
       title: "Surveillance Services Engineer",
       institution: "SE Oro Navigacija",
       dates: "2018 - 2021",
@@ -41,7 +41,7 @@ export const workExperienceItems: ExperienceItemProps[] = [
     {
       icon: workIcon,
       altText: "work-icon",
-      classNames: "pt-20 pb-12 md:flex-row-reverse",
+      classNames: "md:flex-row-reverse",
       title: "Communications Engineer",
       institution: "SE Oro Navigacija",
       dates: "2017 - 2018",
@@ -54,7 +54,7 @@ export const workExperienceItems: ExperienceItemProps[] = [
     {
       icon: educationIcon,
       altText: "education-icon",
-      classNames: "pt-10 md:flex-row",
+      classNames: "md:flex-row",
       title: "Master's degree",
       institution: "Vilnius Gediminas Technical University",
       dates: "2017 - 2019",
@@ -63,7 +63,7 @@ export const workExperienceItems: ExperienceItemProps[] = [
     {
       icon: educationIcon,
       altText: "education-icon",
-      classNames: "pt-20 pb-12 md:flex-row-reverse",
+      classNames: "md:flex-row-reverse",
       title: "Bachelor's degree",
       institution: "Vilnius Gediminas Technical University",
       dates: "2013 - 2017",

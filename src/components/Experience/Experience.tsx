@@ -15,7 +15,7 @@ export const Experience: FC = () => {
     <section
       ref={myExperienceRef}
       id="my-experience"
-      className={`py-20 transition-opacity ease-in duration-500 ${
+      className={`transition-opacity ease-in duration-500 ${
         isMyExperienceIntersecting ? "opacity-100" : "opacity-0"
       }`}
     >

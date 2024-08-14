@@ -9,7 +9,7 @@ export const AboutMe: FC = () => {
     <section
       ref={aboutMeRef}
       id="about-me"
-      className={`py-20 transition-opacity ease-in duration-500 ${
+      className={`transition-opacity ease-in duration-500 ${
         isAboutMeIntersecting ? "opacity-100" : "opacity-0"
       }`}
     >
