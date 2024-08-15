@@ -6,7 +6,7 @@ import { useIsIntersecting } from "@/hooks/useIsIntersecting";
 import emailLogo from "images/email.svg";
 import linkedinIcon from "images/linkedin.png";
 import githubIcon from "images/github.svg";
-import { DownloadCV } from "./DownloadCV";
+import { DownloadCVButton } from "./DownloadCVButton";
 import { CustomLink } from "../CustomLink";
 
 export const Header: FC = () => {
@@ -27,7 +27,7 @@ export const Header: FC = () => {
     <header className="flex items-center justify-center h-screen">
       {isMounted && !isMobile && (
         <div className="custom-container absolute top-16 text-right">
-          <DownloadCV />
+          <DownloadCVButton />
         </div>
       )}
       <div
@@ -69,7 +69,7 @@ export const Header: FC = () => {
             </CustomLink>
           </div>
         </div>
-        {isMounted && isMobile && <DownloadCV />}
+        {isMounted && isMobile && <DownloadCVButton />}
       </div>
     </header>
   );

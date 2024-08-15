@@ -17,7 +17,7 @@ export const Skills: FC = () => {
       }`}
     >
       <div className="custom-container">
-        <p className="pb-20 text-5xl text-accent text-center">My Skills</p>
+        <p className="pb-16 md:pb-20 text-5xl text-accent text-center">My Skills</p>
         <p className="pb-10 text-2xl text-accent text-center md:text-left">
           Main stack
         </p>

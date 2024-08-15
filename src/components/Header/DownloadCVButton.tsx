@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { CustomLink } from "../CustomLink";
 
-export const DownloadCV: FC = () => {
+export const DownloadCVButton: FC = () => {
   return (
     <button
       role="button"
