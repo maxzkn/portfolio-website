@@ -1,5 +1,5 @@
 import { FC, useRef } from "react";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import { useIsIntersecting } from "@/hooks/useIsIntersecting";
 import { CustomLink } from "./CustomLink";
 
@@ -21,7 +21,7 @@ export const Posts: FC = () => {
         classNames="w-80 mx-auto flex flex-col rounded shadow-xl hover:cursor-pointer hover:scale-[1.01] transform transition duration-300 opacity-100 hover:opacity-90"
       >
         <div className="relative w-full h-60">
-          <ExportedImage
+          <Image
             src="/images/post.webp"
             alt="post-picture"
             fill={true}
