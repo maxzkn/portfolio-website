@@ -12,8 +12,8 @@ export const Footer: FC = () => {
         isFooterIntersecting ? "opacity-100" : "opacity-0"
       }`}
     >
-      <p>Maksim Zykin</p>
-      <p>&copy; 2024 | Built with Next.js, TypeScript & Tailwind CSS</p>
+      <p className="text-accent">Maksim Zykin</p>
+      <p className="">&copy; 2024 | Built with Next.js, TypeScript & Tailwind CSS</p>
     </footer>
   );
 };

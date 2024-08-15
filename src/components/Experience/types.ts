@@ -1,7 +1,7 @@
-interface ExperienceItemProps {
-    icon: any;
+export interface ExperienceItemProps {
+    icon: string;
     altText: string;
-    classNames: string;
+    reverseRow: boolean;
     title: string;
     institution: string;
     dates: string;

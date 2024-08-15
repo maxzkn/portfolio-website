@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const colors = require('tailwindcss/colors')
 
 const config: Config = {
   content: [
@@ -11,11 +12,13 @@ const config: Config = {
       fontFamily: {
         primary: "var(--font-spaceMono)",
       },
+      animation: {
+        "spin-slow": "spin 5s linear infinite",
+      },
       colors: {
-        primary: "#FCFCFC",
-        accent: "#006094",
-        // primary: "#1c1c22",
-        // accent: "#00e187",
+        primary: colors.slate[950],
+        secondary: colors.slate[800],
+        accent: "#00e187",
       }
     },
   },

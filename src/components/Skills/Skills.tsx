@@ -12,13 +12,13 @@ export const Skills: FC = () => {
     <section
       ref={mySkillsRef}
       id="my-skills"
-      className={`full-width-child bg-accent transition-opacity ease-in duration-500 ${
+      className={`full-width-child flex items-center py-24 md:py-48 2xl:py-52 bg-gradient-to-l from-slate-600 to-slate-800 transition-opacity ease-in duration-500 ${
         isMySkillsIntersecting ? "opacity-100" : "opacity-0"
       }`}
     >
-      <div className="container mx-auto px-5 py-32">
-        <p className="pb-20 text-5xl text-center text-white">My Skills</p>
-        <p className="pb-10 text-2xl text-white text-center md:text-left">
+      <div className="custom-container">
+        <p className="pb-20 text-5xl text-accent text-center">My Skills</p>
+        <p className="pb-10 text-2xl text-accent text-center md:text-left">
           Main stack
         </p>
         <div className="flex flex-col text-center gap-12 md:flex-row md:text-left md:flex-wrap md:gap-20">
@@ -30,7 +30,7 @@ export const Skills: FC = () => {
             />
           ))}
         </div>
-        <p className="pt-14 pb-10 text-2xl text-white text-center md:text-left">
+        <p className="pt-14 pb-10 text-2xl text-accent text-center md:text-left">
           Technologies used in work/personal projects
         </p>
         <div className="flex flex-wrap gap-6">

@@ -15,7 +15,7 @@
   }
 
   body {
-    @apply font-primary bg-primary text-black;
+    @apply font-primary bg-gradient-to-r from-primary to-secondary text-slate-100;
   }
 
   a {
@@ -31,5 +31,9 @@
 @layer components {
   .full-width-child {
     @apply w-screen max-w-none mx-auto px-0 mb-20 relative left-[calc(-50vw+50%)] ;
+  }
+
+  .custom-container {
+    @apply container mx-auto px-5;
   }
 }

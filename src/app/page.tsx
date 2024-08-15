@@ -11,14 +11,15 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-5 overflow-hidden sm:overflow-visible">
+    <main className="custom-container overflow-hidden sm:overflow-visible">
       <Header />
+      <Divider classNames="pt-2.5" />
       <AboutMe />
       <Divider />
       <Experience />
       <Skills />
       <Posts />
-      <Divider />
+      <Divider classNames="pb-6" />
       <ScrollToTopButton />
       <Footer />
     </main>

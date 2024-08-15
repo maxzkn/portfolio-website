@@ -15,10 +15,10 @@ export const Posts: FC = () => {
         isMyPostsIntersecting ? "opacity-100" : "opacity-0"
       }`}
     >
-      <p className="pb-20 text-5xl text-black text-center">Posts on Medium</p>
+      <p className="pb-20 text-5xl text-accent text-center">Posts on Medium</p>
       <CustomLink
         link="https://medium.com/revel-systems/how-we-use-cube-as-an-api-first-business-intelligence-platform-to-build-real-time-dashboards-6c3cf17899b4"
-        classNames="w-80 mx-auto flex flex-col rounded shadow-xl hover:cursor-pointer hover:scale-[1.01] transform transition duration-300 opacity-100 hover:opacity-90"
+        classNames="w-80 mx-auto flex flex-col rounded shadow-lg shadow-gray-700 hover:cursor-pointer hover:scale-[1.01] transform transition duration-300 opacity-100 hover:opacity-90"
       >
         <div className="relative w-full h-60">
           <Image

@@ -13,15 +13,15 @@ export const AboutMe: FC = () => {
         isAboutMeIntersecting ? "opacity-100" : "opacity-0"
       }`}
     >
-      <p className="pb-20 text-5xl text-black text-center">About me</p>
+      <p className="pb-20 text-5xl text-accent text-center">About me</p>
       <div className="flex lg:mx-14 flex-col-reverse lg:flex-row gap-12 md:gap-16 lg:gap-24 m-auto">
         <div className="flex flex-col gap-10 min-w-72">
           <div>
-            <p className="font-bold">Non-technical languages:</p>
+            <p className="font-bold text-accent">Non-technical languages:</p>
             <p>English, Lithuanian, Russian</p>
           </div>
           <div>
-            <p className="font-bold">Interests:</p>
+            <p className="font-bold text-accent">Interests:</p>
             <p>Sports, music, travelling, video games</p>
           </div>
         </div>

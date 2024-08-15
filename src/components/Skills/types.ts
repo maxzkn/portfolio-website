@@ -6,7 +6,7 @@ export interface MainStackItemProps {
 export interface SecondaryStackItemProps {
     technology: string;
     link: string;
-    icon: any;
+    icon: string;
     altText: string;
     width: number;
     height: number;

@@ -7,8 +7,8 @@ export const MainStackItem: FC<MainStackItemProps> = ({
 }) => {
   return (
     <div className="flex flex-col gap-2 md:gap-5">
-      <p className="text-white">{title}</p>
-      <p className="text-white">{technologies}</p>
+      <p className="text-accent">{title}</p>
+      <p>{technologies}</p>
     </div>
   );
 };
