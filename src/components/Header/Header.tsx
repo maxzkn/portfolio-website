@@ -13,7 +13,9 @@ export const Header: FC = () => {
   // Track when the component is mounted on the client-side, since SSR doesn't have access to "window" object
   const [isMounted, setIsMounted] = useState(false);
 
-  const isMobile = useMediaQuery(`(max-width: ${defaultTheme.screens.md})`);
+  const isMobile = useMediaQuery(`(max-width: ${defaultTheme.screens.lg})`);
+  const isLandscape = useMediaQuery("(orientation: landscape)");
+  const isMobileLandscape = isMobile && isLandscape;
 
   const headerRef = useRef(null);
   const isHeaderIntersecting = useIsIntersecting(headerRef);
@@ -24,15 +26,17 @@ export const Header: FC = () => {
   }, []);
 
   return (
-    <header className="flex items-center justify-center h-screen">
-      {isMounted && !isMobile && (
+    <header className="flex flex-col items-center justify-center h-screen">
+      {isMounted && !isMobile && !isMobileLandscape && (
         <div className="custom-container absolute top-16 text-right">
           <DownloadCVButton />
         </div>
       )}
       <div
         ref={headerRef}
-        className={`flex flex-col [@media(max-height:570px)]:flex-row lg:flex-row-reverse items-center justify-center gap-8 lg:gap-16 transition transform duration-500 ${
+        className={`flex lg:flex-row-reverse ${
+          isMobileLandscape ? "mb-14 flex-row" : "mb-8 flex-col"
+        } items-center justify-center gap-8 lg:gap-16 transition transform duration-500 ${
           isHeaderIntersecting ? "scale-100 opacity-100" : "scale-90 opacity-0"
         }`}
       >
@@ -48,15 +52,11 @@ export const Header: FC = () => {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center gap-5">
-          <p className="text-3xl [@media(max-height:450px)]:text-2xl md:text-4xl lg:text-6xl text-accent rounded-xl">
+          <p className="text-3xl md:text-4xl lg:text-6xl text-accent rounded-xl">
             Maksim Zykin
           </p>
-          <p className="text-md [@media(max-height:450px)]:text-lg md:text-lg text-accent">
-            Software Engineer
-          </p>
-          <p className="text-md [@media(max-height:450px)]:text-lg md:text-lg text-accent">
-            London, UK
-          </p>
+          <p className="text-md md:text-lg text-accent">Software Engineer</p>
+          <p className="text-md md:text-lg text-accent">London, UK</p>
           <div className="flex items-center gap-3">
             <CustomLink link="https://www.linkedin.com/in/maksimzykin/">
               <Image src={linkedinIcon} alt="linkedin-logo" width={25} />
@@ -69,8 +69,10 @@ export const Header: FC = () => {
             </CustomLink>
           </div>
         </div>
-        {isMounted && isMobile && <DownloadCVButton />}
       </div>
+      {isMounted && (isMobile || isMobileLandscape) ? (
+        <DownloadCVButton />
+      ) : null}
     </header>
   );
 };
