@@ -20,7 +20,7 @@ export const ExperienceItem: FC<ExperienceItemProps> = ({
       <div className="basis-2/5"></div>
       <div className="basis-1/5 flex justify-center text-center pb-4 md:pb-0">
         <Image
-          className="border-2 border-slate-600 rounded-full"
+          className="border-2 border-slate-700 rounded-full"
           width={35}
           height={35}
           src={icon}

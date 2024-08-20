@@ -38,7 +38,7 @@ export const mainStackItems: MainStackItemProps[] = [
   },
   {
     title: "Software development processes:",
-    technologies: "CI/CD, Scrum, Test engineering",
+    technologies: "CI/CD, Scrum, testing, pair programming, code review",
   },
   {
     title: "Other:",

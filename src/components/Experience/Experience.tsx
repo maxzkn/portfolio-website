@@ -17,7 +17,7 @@ export const Experience: FC = () => {
       id="my-experience"
       className={`transition-opacity ease-in duration-500 ${isMyExperienceIntersecting ? "opacity-100" : "opacity-0"}`}>
       <p className="pb-20 text-5xl text-accent text-center">My Experience</p>
-      <p className="p-2 text-xl bg-slate-600 rounded w-60 text-center m-auto">
+      <p className="p-2 text-xl bg-slate-700 rounded w-60 text-center m-auto">
         Work experience
       </p>
       <ExperienceItemContainer>
@@ -37,7 +37,7 @@ export const Experience: FC = () => {
       <div
         ref={myEducationRef}
         className={`transition-opacity ease-in duration-500 ${isMyEducationIntersecting ? "opacity-100" : "opacity-0"}`}>
-        <p ref={myEducationRef} className="p-2 text-xl bg-slate-600 rounded w-60 text-center m-auto">
+        <p ref={myEducationRef} className="p-2 text-xl bg-slate-700 rounded w-60 text-center m-auto">
           Education
         </p>
         <ExperienceItemContainer>
