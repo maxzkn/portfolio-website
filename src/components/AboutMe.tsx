@@ -22,7 +22,7 @@ export const AboutMe: FC = () => {
           </div>
           <div>
             <p className="font-bold text-accent">Interests:</p>
-            <p>Sports, music, travelling, video games</p>
+            <p>Sports, music, travelling, reading, video games</p>
           </div>
           <div>
             <p className="font-bold text-accent">Interpersonal skills:</p>

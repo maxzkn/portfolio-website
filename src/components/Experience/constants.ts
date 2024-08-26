@@ -12,7 +12,7 @@ export const workExperienceItems: ExperienceItemProps[] = [
       dates: "2022 - 2024",
       description:
         "As part of a Scrum team, I worked on multiple greenfield \
-        projects, participating in every phase. My responsibilities \
+        projects and POCs, participating in every phase. My responsibilities \
         included developing the infrastructure, designing the \
         architecture and code, selecting appropriate technologies and \
         implementing the solution.",
