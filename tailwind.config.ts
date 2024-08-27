@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 const config: Config = {
   content: [
@@ -16,10 +16,10 @@ const config: Config = {
         "spin-slow": "spin 5s linear infinite",
       },
       colors: {
-        primary: colors.slate[950],
-        secondary: colors.slate[800],
+        backgroundPrimary: colors.slate[950],
+        backgroundSecondary: colors.slate[800],
         accent: "#00e187",
-      }
+      },
     },
   },
   plugins: [],

@@ -15,7 +15,7 @@
   }
 
   body {
-    @apply font-primary bg-gradient-to-r from-primary to-secondary text-slate-100;
+    @apply font-primary bg-gradient-to-r from-backgroundPrimary to-backgroundSecondary text-slate-100;
   }
 
   a {
@@ -30,10 +30,18 @@
 
 @layer components {
   .full-width-child {
-    @apply w-screen max-w-none mx-auto px-0 mb-20 relative left-[calc(-50vw+50%)] ;
+    @apply w-screen max-w-none mx-auto px-0 mb-20 relative left-[calc(-50vw+50%)];
   }
 
   .custom-container {
     @apply container mx-auto px-5;
+  }
+
+  .icon-hover {
+    @apply lg:opacity-90 lg:hover:opacity-100 transition transform duration-300;
+  }
+
+  .divider {
+    @apply flex-1 border-b border-dashed border-slate-400;
   }
 }
