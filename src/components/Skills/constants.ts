@@ -18,7 +18,7 @@ import firebaseIcon from "images/firebase.svg";
 export const mainStackItems: MainStackItemProps[] = [
   {
     title: "Programming languages:",
-    technologies: "Python, JavaScript/TypeScript",
+    technologies: "Python, JavaScript/TypeScript, SQL",
   },
   {
     title: "Frameworks:",
@@ -38,11 +38,13 @@ export const mainStackItems: MainStackItemProps[] = [
   },
   {
     title: "Software development processes:",
-    technologies: "CI/CD, Scrum, testing, pair programming, code review",
+    technologies:
+      "Agile (Scrum), SQA (CI/CD, automated testing, code review), application performance monitoring, pair programming",
   },
   {
     title: "Other:",
-    technologies: "HTML, CSS, SQL",
+    technologies:
+      "HTML & CSS (SASS), Git, Linux command line, Bash scripting, computer networking",
   },
 ];
 

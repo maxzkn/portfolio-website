@@ -22,27 +22,36 @@ export const AboutMe: FC = () => {
           </div>
           <div>
             <p className="font-bold text-accent">Interests:</p>
-            <p>Sports, music, travelling, reading, video games</p>
+            <p>Programming, sports, music, travelling, reading, video games</p>
           </div>
           <div>
             <p className="font-bold text-accent">Interpersonal skills:</p>
-            <p>Strong communication skills, leadership, attention to detail, flexibility</p>
+            <p>
+              Strong communication skills, leadership, creativity, attention to
+              detail, flexibility
+            </p>
           </div>
         </div>
-        <p>
-          Hi,
-          <br />
-          <br />
-          My name is Max. Over the past three years of experience as a Software
-          Engineer, I have developed robust infrastructure, designed
-          architecture and code, and implemented solutions as part of a Scrum
-          team. I am a quick learner and dedicated, honest and hard-working
-          software engineer who likes to contribute to a purposeful mission and
-          help deliver quality software. I love to work in a healthy and
-          friendly environment and as someone who has a strong sense of
-          teamwork, I enjoy being a part of an innovative and collaborative team
-          who would share the same passion for building good products.
-        </p>
+        <div>
+          <p className="text-indent">Hi,</p>
+          <p className="text-indent">
+            My name is Max. Over the past three years of experience as a Full
+            Stack Software Engineer, I was developing robust infrastructure,
+            designing architecture and code, and implementing solutions as part
+            of a Scrum team.
+          </p>
+          <p className="text-indent">
+            I am a quick learner and dedicated, honest and hard-working software
+            engineer who loves to contribute to a purposeful mission and help
+            deliver quality software.
+          </p>
+          <p className="text-indent">
+            I love to work in a healthy and friendly environment and as someone
+            who has a strong sense of teamwork, I enjoy being a part of an
+            innovative and collaborative team who would share the same passion
+            for building good products.
+          </p>
+        </div>
       </div>
     </section>
   );

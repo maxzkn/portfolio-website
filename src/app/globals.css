@@ -44,4 +44,8 @@
   .divider {
     @apply flex-1 border-b border-dashed border-slate-400;
   }
+
+  .text-indent {
+    @apply indent-7;
+  }
 }
