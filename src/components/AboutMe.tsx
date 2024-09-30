@@ -35,10 +35,20 @@ export const AboutMe: FC = () => {
         <div>
           <p className="text-indent">Hi,</p>
           <p className="text-indent">
-            My name is Max. Over the past three years of experience as a Full
-            Stack Software Engineer, I was developing robust infrastructure,
-            designing architecture and code, and implementing solutions as part
-            of a Scrum team.
+            My name is Max. Over the past three years of experience as a
+            Software Engineer, I worked on multiple greenfield projects and
+            POCs, participating in every phase. My responsibilities included
+            developing the infrastructure, designing the architecture and code,
+            selecting appropriate technologies and implementing the solution as
+            part of a cross-functional and collaborative Scrum team. I strongly
+            believe in product ownership, as I was working within a “You build
+            it, you run it” model.
+          </p>
+          <p className="text-indent">
+            I have developed reusable and efficient applications and services
+            using various architectural patterns, including microservices,
+            microfrontend, clean architecture and event-driven architecture. I
+            worked with legacy codebase and monoliths as well.
           </p>
           <p className="text-indent">
             I am a quick learner and dedicated, honest and hard-working software

@@ -34,7 +34,7 @@ export const Header: FC = () => {
       )}
       <div
         ref={headerRef}
-        className={`flex lg:flex-row-reverse ${isMobileLandscape ? "mb-10 flex-row-reverse" : "mb-8 flex-col"} items-center justify-center gap-8 lg:gap-16 transition transform duration-500 ${isHeaderIntersecting ? "scale-100 opacity-100" : "scale-90 opacity-0"}`}
+        className={`flex lg:flex-row-reverse ${isMobileLandscape ? "mb-10 flex-row-reverse" : "flex-col"} ${isMobile ? "mb-8" : ""} items-center justify-center gap-8 lg:gap-16 transition transform duration-500 ${isHeaderIntersecting ? "scale-100 opacity-100" : "scale-90 opacity-0"}`}
       >
         <div className="relative w-[200px] h-[200px] md:w-[240px] md:h-[240px] lg:w-[300px] lg:h-[300px] rounded-full before:absolute before:top-[-50%] before:right-[-50%] before:bottom-[-50%] before:left-[-50%] before:bg-[conic-gradient(transparent,transparent,#00e187)] before:animate-spin-slow overflow-hidden">
           <div className="absolute flex justify-center items-center top-[2px] left-[2px] bottom-[2px] right-[2px]">
