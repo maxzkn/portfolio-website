@@ -38,7 +38,7 @@ export const AboutMe: FC = () => {
             My name is Max. Over the past three years of experience as a Full
             Stack Software Engineer, I was developing robust infrastructure,
             designing architecture and code, and implementing solutions as part
-            of a Scrum team.
+            of a cross-functional Scrum team.
           </p>
           <p className="text-indent">
             I am a quick learner and dedicated, honest and hard-working software
