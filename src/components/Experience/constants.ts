@@ -6,6 +6,15 @@ export const workExperienceItems: ExperienceItemProps[] = [
   {
     icon: workIcon,
     altText: "work-icon",
+    reverseRow: true,
+    title: "Senior Frontend Engineer",
+    institution: "TransferGo",
+    dates: "2024 - Present",
+    description: "",
+  },
+  {
+    icon: workIcon,
+    altText: "work-icon",
     reverseRow: false,
     title: "Software Engineer",
     institution: "Revel Systems",
