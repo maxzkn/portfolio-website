@@ -16,7 +16,7 @@ export const workExperienceItems: ExperienceItemProps[] = [
     icon: workIcon,
     altText: "work-icon",
     reverseRow: false,
-    title: "Software Engineer",
+    title: "Software Engineer (backend leaning)",
     institution: "Revel Systems",
     dates: "2022 - 2024",
     description:
